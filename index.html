@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Colibrí Arcano</title>
 	<link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' rel='stylesheet'>
-	<link href='//fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,700i' media='all' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet'>
     <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' rel='stylesheet'>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#293e3b">
+<meta name="msapplication-TileColor" content="#293e3b">
+<meta name="theme-color" content="#698a85">
 </head>
 <body>
 	<nav id="navbar" class="navbar shadow-sm navbar-expand-sm fixed-top">
@@ -19,12 +24,14 @@
 	      <img  src="https://rawcdn.githack.com/cabsnss/calg/84068f694978c53b0c7d39472e3ea5bfd74ba40a/logo.svg" alt="Logo" />
 	  </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-	    <span class="fas fa-bars"></span>
-	  </button>
+<i class="fas fa-align-left"></i>	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav ml-auto text-center">
 	      <li class="nav-item">
 	        <a class="nav-link" href="/">Inicio</a>
+	      </li>
+	        <li class="nav-item">
+	        <a class="nav-link" href="blog.html">Blog</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -32,17 +39,64 @@
 
 	<div class="hero">
 	  <div class="mr-content">
-	    <div class="caption">
-	      <div class="row full justify-content-center align-items-center">
-	         <div class="col-md-7">
+	    <div class="caption ">
+	    	<div class="row align-items-center justify-content-center">
+	        <div class="col-md-7 ">
 	          <h1>El Tarot es una gran herramienta</h1>
-	          
-	     </div>
-	     </div>
+	          <p>Accede a la sabiduría que necesitas para generar verdaderos cbios.<br>
+	      </p>
+	      </div>
+	            <div class="col-md-5 text-right">
+	            	<img class="img-fluid" src="img/photo_2019-11-07_17-51-49.jpg" width="70%">
+	      </div>
+	      </div>
+
 	    </div>
 	  </div>
 	</div>
+<div class="intro text-center">
+	<h2>Genera cambios en tu vida</h2>
+	<p>El Tarot te mostrará el reflejo te ti mismo, cómo está bloqueado y cómo tracender.<br>
+	No te dirá qué hacer, en cambio, te ayudará a entender para tener una conciecia superior.</p>
+	<div class="more-readings">
+		<a class="btn-ca" href="#">Comienza</a>
+	</div>
 
+</div>
+<div class="last-posts-container">
+<div class="last-posts">
+  <div class="last-posts-header text-center">
+    <h2>Últimas publicaciones</h2>
+  </div>
+  <div class="blog-feed">
+    <div class="row full justify-content-center align-items-center">
+      <div class="col-md-6 ">
+	      	<div class="post-container">
+	      		<a class="post-enlace" href="#">
+	      			<img class='post-miniatura' src="https://images.pexels.com/photos/2346449/pexels-photo-2346449.jpeg?auto=compress&cs=tinysrgb&dpr"/>
+			            <div class="contenido">
+			              <div class="post-copy">
+			                <h3>Dejar de planear para actuar</h3>
+			              </div>
+			            </div>
+		          </a>
+		    </div>
+      </div>
+
+      
+    </div>
+  </div>
+  <div class="text-center p-5">
+  	<a href="" class="ca-btn">Ver todo</a>
+  </div>
+</div>
+</div>
+<div class="offer text-cent">
+	<h2>Lecturas gratis</h2>
+	<p>Consulta las lecturas que comparto gratis. Si estás aquí, las lecturas que verás, en alguna medida significarán algo para ti.</p>
+	<a class="btn-ca" href="#">Accede ahora</a>
+
+	</div>
 	<button onclick="topFunction()" id="myBtn" title="Subir"><i class="fas fa-angle-up"></i></button>
 
 <footer>
@@ -61,9 +115,10 @@
 </footer>
 
 
+<script src="js/code.js"></script>
 <script type="text/javascript" crossorigin='anonymous' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
 <script type="text/javascript" crossorigin='anonymous' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
 <script type="text/javascript" crossorigin='anonymous' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
-<script type="text/javascript" src='https://use.fontawesome.com/releases/v5.5.0/js/all.js'></script></body>
+<script type="text/javascript" src='https://use.fontawesome.com/releases/v5.5.0/js/all.js'></script>
 </body>
 </html>
