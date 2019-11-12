@@ -1,18 +1,27 @@
 html {
     scroll-behavior: smooth;
 }
-
-@media (min-width: 768px) { 
+body{
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 47px;
+  font-size: 1.07rem;
+  color: #333333;}@media (min-width: 768px) { 
   .navbar-brand {padding-left: 60px;}
   .navbar-nav {padding-right: 60px;}
  }
 
- 
+h1, h2, h3, h4, h5, h6 {font-family: 'Poppins', sans-serif; color: #283D3A; } 
 
 button:focus {
     outline: none;
 }
-/* BTN */
+.icon::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}/* BTN */
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -21,7 +30,7 @@ button:focus {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #305d73; /* Set a background color */
+  background-color: #5e3e3073; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 3px 10px; /* Some padding */
@@ -54,30 +63,37 @@ button:focus {
     border: 1.5px solid #ffffff00;
 }
 
-.btn-c {
-    border-bottom: 2px solid #305d73;
+.link-more {
     font-size: .9rem;
     letter-spacing: .05rem;
-    color: #000;
+    color: #3c5a5f;
     font-weight: 600;
     text-transform: uppercase;
     padding: 10px 25px;
     border-radius: 1px;
-    transition: border-bottom .11s ease;
     text-decoration: none;
     display: inline-block;
 }
-.btn-c:hover {
-  color: #000;
+
+.link-more:after {
+display: inline-block;
+font-family: "Font Awesome 5 Free", sans-serif;
+content: '\f054';
+margin-left: .7rem;
+transition: margin-left .11s;
+}
+
+.link-more:hover {
+  color: #5E3E30;
   text-decoration: none;
-  border-bottom: 2px solid #ffffff00;
+
 }
 
 .btn-ca {
-    border: 1px solid #fff;
+    border: 2px solid #5E3E30;
     font-size: .9rem;
     letter-spacing: .05rem;
-    color: #fff;
+    color: #000;
     font-weight: 500;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
@@ -88,9 +104,9 @@ button:focus {
     display: inline-block;
 }
 .btn-ca:hover {
-  color: #fff;
+  color: #3c5a5f;
   text-decoration: none;
-  border: 1px solid #ffffff00;
+  border: 2px solid #ffffff00;
 }
 
 .navbar {
@@ -119,17 +135,18 @@ button:focus {
   color: #305d73cf;
 }
 
-.hero { background:#3c5a5f; padding: 7rem 0; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;}
-.caption { color: #fff; padding: 0 0px; text-align:left;}
-.caption h1 { font-size: 2.7rem; letter-spacing: .03rem; margin-bottom: 1rem; font-family: 'Poppins', sans-serif; text-transform: uppercase; font-weight: 500; }
+.hero { background-image: linear-gradient(90deg, rgba(41, 62, 59) 49%, rgba(41, 62, 59) 100%), url("https://player.vimeo.com/video/357005099"); padding: 3rem; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;}
+.caption { color: #fff!important; padding: 0 1rem; text-align:left; max-width: 1170px; margin: 0 auto;}
+.caption h1 { color: #fff!important;word-wrap: break-word;font-size: 2.7rem; letter-spacing: .03rem; margin-bottom: 1.5rem; text-transform: uppercase; font-weight: 500; }
 .img-head { height: 170px; position: relative; }
-.caption p { font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.3rem; letter-spacing: .01rem; margin-bottom: 0; }
+.caption p { font-weight: 400; font-size: 1.3em; letter-spacing: .01rem; margin-bottom: 0; }
 
-.start-content { background-color: #fff; margin: 5.7rem 0; }
-.start-content h2 {font-family: 'Poppins', sans-serif; font-size: 1.3rem; color: #000; text-align: center!important; letter-spacing: .077rem; text-transform: uppercase; font-weight: 500; }
-
+.intro {margin: 7rem auto; padding: 0 .9rem; max-width: 900px;}
+.intro h2 { word-wrap: break-word; font-size: 1.7rem; color: #000; text-transform: uppercase; }
+.intro p {font-size: 1.2rem; margin: 2.5rem 0;}
+.more-readings { }
 .card-content { margin: 7.7rem 0; }
-.card-content h2 {font-family: 'Poppins', sans-serif; font-size: 1.3rem; color: #000; letter-spacing: .077rem; text-transform: uppercase; font-weight: 400; }
+.card-content h2 {font-size: 1.3rem; color: #000; letter-spacing: .077rem; text-transform: uppercase; font-weight: 400; }
 .card { border:none!important;background: none!important;}
 .card-title { font-family: 'Poppins', sans-serif; font-size: 1.3rem; color: #000; letter-spacing: .077rem; text-transform: uppercase; font-weight: 400;}
 .card a { color: #305d73; }
@@ -138,65 +155,51 @@ button:focus {
 .autor-content { margin: 0; background: #1852486e;}
 .autor-text { padding: 0 3rem; }
 .autor-text p { margin: 1.1rem 0;}
-.autor-text h2 { font-family: 'Poppins', sans-serif; font-size: 1.3rem; letter-spacing: .077rem; text-transform: uppercase; font-weight: 400;}
+.autor-text h2 {font-size: 1.3rem; letter-spacing: .077rem; text-transform: uppercase; font-weight: 400;}
 .autor-text h3 { font-size: .79rem; font-weight: 400; text-transform: uppercase; margin-bottom: 0;}
 .autor-picture { width: 310px; }
 .mr-content {width: 100%; margin: 0 auto;}
-.posts { max-width: 1100px; margin: 5rem auto 3rem; }
-.posts h2 { text-align: center!important; font-size: 1.7rem; color: #000; letter-spacing: .03em; text-transform: uppercase; font-weight: 500; }
-.posts p {  text-align: center;}
-.blog-feed { max-width: 767px; margin: 3rem auto 5rem; }
-* {
-  box-sizing: border-box;
-}
-.rowfeed:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.column {
-  float: left;
-  width: 50%;
-  padding: 0 10px;
-}
-.post-container { position: relative; height: 17rem; width: 100%; z-index: 1; margin-bottom: 1rem}
+.last-posts-container { background: #f1f1f1; padding: 5rem 0; }
+.last-posts { max-width: 100%; margin: 0 auto; }
+.last-posts-header h2 { word-wrap: break-word;text-align: center!important; margin-bottom: 3rem; font-size: 1.7rem; color: #000; text-transform: uppercase;  }
+.blog-feed { max-width: 967px; margin: 0 auto; }
+.post-container { position: relative; box-shadow: 0 .5rem 1rem rgba(0,0,0,.17)!important;height: 17rem; width: 100%; z-index: 1; }
 .post-enlace { width: 100%; height: 100%; z-index: 1; }
 .post-miniatura { width: 100%; height: 100%; object-fit: cover; z-index: 1;}
 .nospace { padding-right: 0px; padding-left: 0px; }
-.full { margin-left: 0px!important; margin-right: 0px!important; }
+.full { margin-left: 0px!important; margin-right: 0px!important; padding: 0 15px;}
 .contenido {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgb(66, 78, 80));
+    background: linear-gradient(#335054b5, #335054);
     z-index: 5;
     opacity: 1;
 }
-.contenido-hover {
+.contenido::after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(rgb(66, 78, 80), rgb(66, 78, 80));
+    background: linear-gradient(#335054, #335054);
     opacity: 0;
     transition: opacity .17s ease;
     z-index: 1;
   }
 
 .post-copy {
-  position: absolute;
+  word-wrap: break-word;position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 2;
-    width: 300px;
 }
 .post-copy h3{
-  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: .05rem;
@@ -209,23 +212,26 @@ button:focus {
   font-size: .9rem;
   color: #fff;
 }
-.post-container:hover .contenido-hover{opacity:1}
+.post-container:hover .contenido::after{opacity:1}
+.offer {margin: 3rem auto; padding: 0 .9rem; max-width: 900px; }
+.offer h2{ word-wrap: break-word; font-size: 1.7rem; color: #000; text-transform: uppercase; }
+.offer p { font-size: 1.2rem; }
 
 .store-header { background: #305d73; color: #fff; padding: 7.7rem 0; }
-.store-header h1 { font-family: 'Montserrat', serif; font-size: 1.3rem; letter-spacing: .077rem; text-transform: uppercase; font-weight: 400;}
+.store-header h1 { font-size: 1.3rem; letter-spacing: .077rem; text-transform: uppercase; font-weight: 400;}
 .store-content { padding: 3.7rem 0; }
 .store-text { padding: 1.7rem 0; }
-.store-text h2 { font-family: 'Montserrat', serif; font-size: 1.3rem; letter-spacing: .077rem; text-transform: uppercase; font-weight: 400;}
+.store-text h2 { font-size: 1.3rem; letter-spacing: .077rem; text-transform: uppercase; font-weight: 400;}
 .store-text p { font-size: 1.07rem; }
 
 .content { max-width: 1300px; padding-right: 70px; padding-left: 70px; margin-right: auto; margin-left: auto; }
 
 .reading-header { padding: 5.1rem 0; }
-.reading-header h1 { font-family: 'Montserrat', serif; font-size: 1.7rem; letter-spacing: .077rem; text-transform: uppercase; font-weight: 400;}
+.reading-header h1 {font-size: 1.7rem; letter-spacing: .077rem; text-transform: uppercase; font-weight: 400;}
 .reading-header p { font-size: 1.1rem; }
 .reading-picture { padding: 1.7rem; }
 .reading-content { max-width: 1100px; margin: 7rem auto; padding: 0 17px;}
-.reading-content h2 { font-family: 'Montserrat', serif; font-size: 1.3rem; letter-spacing: .077rem; text-transform: uppercase; font-weight: 400;}
+.reading-content h2 { font-size: 1.3rem; letter-spacing: .077rem; text-transform: uppercase; font-weight: 400;}
 
 .modal-content { background: none!important; border-radius: .1rem; border:none!important; }
 .modal-body { background: #fff; padding: 1.7rem; }
@@ -233,10 +239,10 @@ button:focus {
 .modal-header .close { padding: 0!important; }
 .close { font-size: 1.7rem; color: #fff; opacity: .7; text-shadow: none!important;}
 .close:not(:disabled):not(.disabled):hover { color: #fff; opacity: .7; }
-.modal-title { font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 1.3rem; letter-spacing: .077rem; font-weight: 400;}
+.modal-title { text-transform: uppercase; font-size: 1.3rem; letter-spacing: .077rem; font-weight: 400;}
 
 .form-intro { padding: 0rem 0 1.7rem; }
-.form-intro  h2 { font-family: 'Montserrat', sans-serif; font-size: 1.3rem; text-transform: uppercase; letter-spacing: .077rem; font-weight: 400;}
+.form-intro  h2 { font-size: 1.3rem; text-transform: uppercase; letter-spacing: .077rem; font-weight: 400;}
 .form-intro p { margin-bottom: 0; }
 .form-input { position: relative; margin-bottom: 1.3rem; }
 .form-input svg { position: absolute; left: 1.3rem; top: 50%; transform: translateY(-50%); color: #737373; }
@@ -248,12 +254,13 @@ button:focus {
 .form-consulta textarea {min-height: 150px!important;}
 
 @media (max-width: 767px) { 
-.caption p { margin-bottom:1rem }
-.caption h1 { font-size: 2.1rem; }
+.caption p { margin-bottom:1rem; }
+.caption h1 { font-size: 2.5rem; }
 .start-content { margin: 3.7rem 0; }
 .card-content { margin: 3.7rem 0; }
 .autor-content {margin: 3.7rem 0;}
 .reading-header-content { margin-bottom: 3rem; padding: 0 27px;}
+.full { padding: 0!important; }
 .content { padding: 0 30px!important; }
 .autor-text { padding: 1rem .7rem 0; }
 .modal-body { padding: 1rem; }
@@ -265,47 +272,53 @@ button:focus {
    }
 .img-hero { height:210px!important; }
 .reading-options { width:47%; height: 13rem; }
-.blog-feed { max-width: 767px; margin: 1rem auto 3rem; }
-.posts { max-width: 1100px; margin: 3rem auto 1rem; }
-.posts h2 { font-size: 1.5rem; }
+.post-container { margin-bottom: 1rem;}
+.blog-feed { max-width: 567px; }
 }
 
 @media (max-width: 576px) { 
-.hero { padding: 3rem 0; }
-.caption h1 { font-size: 1.9rem; }
+.hero { padding: 3.7rem 0; }
+.caption h1 { font-size: 2.3rem; }
 
  }
+@media (max-width: 179px) { 
+.post-copy {max-width: 100px;}
+}
 
-/* PREFUNTAS FRCUENTES *\
+/* PREFUNTAS FRCUENTES */
 .faq { margin: 7rem auto 3rem; }
-.faq h1 { font-family: 'Montserrat', sans-serif; font-size: 1.7rem; font-weight: 300; text-transform: uppercase; }
+.faq h1 { font-size: 1.7rem; font-weight: 300; text-transform: uppercase; }
 .faq-content { max-width: 700px; margin: 3rem auto; padding: 0 17px;}
 .card-header { padding: 1.7rem 1.25rem!important; background: none!important; }
 .btn-link { color: #305d73  }
 .btn-link:hover { color: #305d73d1; text-decoration: none!important; }
 .btn-link:focus { text-decoration: none!important; }
 
+.blog { margin: 7.7rem 0; font-family: 'Poppins', sans-serif; }
+.blog h1 {font-size: 2.3rem; text-transform: uppercase; }
+.blog p { font-size: 1.3rem; }
+.page-link {color: #414c4d;border:none!important;}
+.page-link:hover {color: #414c4d;}
+.page-item.active .page-link {background-color: #424e50;}
+.page-item.disabled .page-link {color: #6c757dad;}
 /* POSTS */
-.post-o { max-width: 900px; margin: 0 auto; }
-.post-title { font-family: 'Poppins', sans-serif; font-size: 1.9rem; color: #fff; font-weight: 500; text-transform: uppercase; margin-bottom: 1.3rem;  position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 2;
-  }
+.post-list { max-width: 900px; margin: 5rem auto; }
+.post-list h2 { word-wrap: break-word;font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: #fff; font-weight: 500; text-transform: uppercase; }
+.single-item { margin-top: 5rem; margin-bottom: 3rem; }
+.snippet { padding: 0 .7rem; }
 .post { max-width: 900px; margin: 3rem auto; padding: 0 15px; }
 .reading-options { background:#607D8B; color:#fff; width:30%; height: 13rem; border:3px #455d67 solid; border-radius: 7px; font-size:1.7rem; text-transform:uppercase; margin: 0 .3rem;}
 .reading-options:focus { background:#2d4550; }
 .reading-options:hover { background:#2d4550; }
 .option-card { background:#f1f1f1; padding: 1.25rem;}
 
-
+.post .title h1{ font-size: 2.1rem; text-transform: uppercase; margin-bottom: 3rem; }
+.post { max-width: 900px; margin: 5rem auto; }
 .title-container { height: 30rem;position: relative; width: 100%; z-index: 1; margin: 1rem auto;}
 .post-image { width: 100%; height: 100%; object-fit: cover; z-index: 1;}
 .title-overlay {
     position: absolute;
-    top: 0;
+    top: 0;0
     left: 0;
     right: 0;
     bottom: 0;
@@ -321,14 +334,13 @@ button:focus {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 2;
-    width: 300px;
 }
 .title-container:hover .title-overlay::after{opacity:1}
 
-
+.lecturas-gratis { margin: 3rem 0; }
 footer {
   color: #000;
-  background: #f1f1f1;
+  background: #fff;
   padding: 1rem;
 }
 footer a {
@@ -355,8 +367,3 @@ footer i {
 }
 /*-- Body Content CSS --*/
 
-body{
-  font-family: 'Open Sans', sans-serif;
-  padding-top: 47px;
-  font-size: 1.07rem;
-  color: #333333;}
