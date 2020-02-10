@@ -352,9 +352,7 @@ transition: margin-left .11s;
 .get-lead {padding: 5rem 1rem; margin: 0; }
 .spread-container { width: 50%;}
 .snippet { padding: 1.7rem 0rem 0; }
-.features img {
-  width: 25%;
-}
+.features img { width: 25%; }
 }
 
 @media (max-width: 576px) { 
