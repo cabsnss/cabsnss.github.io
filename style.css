@@ -210,7 +210,7 @@ color: #416e84;
 
 .introduction {
   max-width: 700px;
-  margin: 7rem auto;
+  margin: 5rem auto;
 }
 
 .introduction h2 {
@@ -231,7 +231,7 @@ color: #416e84;
 }
 
 .features {
-  margin: 7rem 0;
+  margin: 5rem 0;
 }
 .features img {
   width: 40%;
@@ -258,7 +258,7 @@ color: #416e84;
   margin-bottom: 1rem;
 }
 .all-spreads {
-  margin: 5.6rem 0;
+  margin: 5rem 0;
 }
 .all-spreads h1 {
   text-transform: uppercase;
@@ -322,7 +322,9 @@ transition: margin-left .11s;
   text-decoration: none;
 
 }
-
+.pagination-spreads {
+  margin: 5rem 0;
+}
 .page-item.active .page-link {
   background-color: #424e50;
 }
@@ -347,9 +349,12 @@ transition: margin-left .11s;
 .hero-btn { margin-bottom: 1.3rem; }
 .home-spread-body img { width: 70%; }
 .spread-caption img { max-width: 50%; padding-bottom: 1.7rem;}
-.get-lead {padding: 5rem 1rem; }
+.get-lead {padding: 5rem 1rem; margin: 0; }
 .spread-container { width: 50%;}
 .snippet { padding: 1.7rem 0rem 0; }
+.features img {
+  width: 25%;
+}
 }
 
 @media (max-width: 576px) { 
@@ -367,7 +372,7 @@ transition: margin-left .11s;
   z-index: 99; 
   border: none; 
   outline: none; 
-  background-color: #5e3e3073; 
+  background-color: #2e8c9866; 
   color: white; 
   cursor: pointer; 
   padding: 3px 10px; 
