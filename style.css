@@ -59,7 +59,7 @@ button:focus {
 
 .hero {
   background: linear-gradient(90deg, rgb(50, 100, 115) 100%, rgb(50, 100, 115) 100%);
-  padding: 3rem;
+  padding: 5rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,7 +77,7 @@ button:focus {
 .caption h1 {
   color: #fff;
   word-wrap: break-word;
-  font-size: 2.1rem;
+  font-size: 2.7rem;
   letter-spacing: .03rem;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
@@ -86,14 +86,14 @@ button:focus {
 
 .caption p {
   font-weight: 400;
-  font-size: 1.1em;
+  font-size: 1.2em;
   letter-spacing: .01rem;
   margin-bottom: 1rem;
 }
 
 .hero-btn {
     border: 2px solid #a5b9bf;
-    font-size: .9rem;
+    font-size: 1.2rem;
     letter-spacing: .05rem;
     color: #fff;
     font-weight: 500;
@@ -174,13 +174,11 @@ color: #416e84;
 }
 .spread-caption {
   color: #fff;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .spread-caption h1 {
   color: #fff;
-  max-width: 900px;
-  margin: 0 auto;
   font-size: 2.1rem;
   letter-spacing: .03rem;
   margin-bottom: 1rem;
@@ -196,10 +194,12 @@ color: #416e84;
 }
 
 .newsletter {
+  padding: .1rem 0!important;
+}
+.newsletter p {
   font-size: .9rem!important;
   color: #fff;
   font-weight: 400!important;
-  padding: .1rem 0!important;
 }
 
 .contents-spread {
