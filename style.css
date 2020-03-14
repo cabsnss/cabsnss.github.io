@@ -8,13 +8,13 @@ body {
   color: #333333;
 }
 .nav-back {
-    padding-top: 47px;
+    padding-top: 46px;
     background: #f1f1f1;
 
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
-  color: #283D3A;
+  color: #000;
   word-wrap: break-word;
 }
 
@@ -45,7 +45,7 @@ button:focus {
 }
 
 .navbar-nav li{
-  padding-right: .7rem;
+  padding-right: .9rem;
 }
 
 .navbar-nav a {
@@ -58,41 +58,40 @@ button:focus {
 }
 
 .hero {
-  background: linear-gradient(90deg, rgb(50, 100, 115) 100%, rgb(50, 100, 115) 100%);
-  padding: 5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background: #00BCFF;
+  padding: 5rem 1rem;
+  
 }
 
 .caption { 
-  color: #fff; 
-  padding: 0 1rem; 
   text-align:left; 
   max-width: 1170px; 
   margin: 0 auto;
 }
 
 .caption h1 {
-  color: #fff;
+  color: #000;
   word-wrap: break-word;
-  font-size: 2.7rem;
+  font-size: 2.6rem;
   letter-spacing: .03rem;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .caption p {
+  color:#000;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.3em;
   letter-spacing: .01rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
-
+.caption img {
+  max-width: 70%;
+}
 .hero-btn {
-    border: 2px solid #a5b9bf;
+    border: 2px solid #000;
+    background: #000;
     font-size: 1.2rem;
     letter-spacing: .05rem;
     color: #fff;
@@ -101,33 +100,30 @@ button:focus {
     font-family: 'Poppins', sans-serif;
     padding: 10px 25px;
     border-radius: 1px;
-    transition: border .1s ease;
+    transition: border, background .1s ease;
     text-decoration: none;
     display: inline-block;
 }
 .hero-btn:hover {
   color: #fff;
   text-decoration: none;
-  border: 2px solid #ffffff00;
+  border: 2px solid #222;
+  background: #222;
 }
 
 .home-spread {
-  max-width: 670px;
+  max-width: 700px;
   margin: 7rem auto;
   padding: 0 1rem;
 }
 
 .home-spread h2 {
-  font-size: 1.7rem
+  font-size: 1.7rem;
 }
 
-.home-spread a {
-font-weight: 500;
-color: #416e84;
-}
 
 .home-spread h3 {
-  font-size: 1.3rem
+  font-size: 1.3rem;
 }
 
 .home-spread-body {
@@ -138,227 +134,168 @@ color: #416e84;
   text-align: justify;
 }
 
-.home-spread-body a {
-  color: #416e84;
-  font-weight: 500;
+.home-spread a {
+  color: #222;
+  font-weight: 600;
 }
 
 .home-spread-btn {
-    border: 2px solid #326473;
-    background: none!important;
+    border: 2px solid #000;
+    background: #000;
     display: inline-block;
-    font-size: .9rem;
+    font-size: 1rem;
     letter-spacing: .05rem;
     font-family: 'Poppins', sans-serif;
-    color: #000;
+    color: #fff!important;
     font-weight: 500;
     text-transform: uppercase;
-    padding: 8px 25px;
+    padding: 9px 25px;
     border-radius: 1px;
-    transition: border .11s ease;
+    transition: border, background .11s ease;
     cursor: pointer;
 }
 
 .home-spread-btn:hover {
     text-decoration: none;
-    border: 2px solid #ffffff00;
+    color: #fff;
+    border: 2px solid #222;
+    background: #222;
 }
-
 .spread {
-  background: linear-gradient(90deg, rgb(116, 145, 158) 49%, rgb(95, 129, 146) 100%);
-  padding: 3rem 1rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.spread-caption {
-  color: #fff;
-  max-width: 1000px;
-  margin: 0 auto;
+  background: #24cbe8;
+  padding: 5rem 1rem;
 }
 .spread-caption h1 {
-  color: #fff;
-  font-size: 2.1rem;
-  letter-spacing: .03rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  font-weight: 500;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color:#222;
+font-weight: 600;
+}
+.spread-caption {
+
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.spread-caption h2 {
+  color: #222;
+  font-size: 2.3rem;
+  letter-spacing: .03rem;
+  margin-bottom: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .spread-caption p {
-  font-weight: 400;
-  font-size: 1em;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.5rem;
   letter-spacing: .01rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.3rem;
 }
-
+.spread-caption img {
+  max-width: 100%;
+}
 .newsletter {
   padding: .1rem 0!important;
 }
 .newsletter p {
-  font-size: .9rem!important;
-  color: #fff;
+  font-size: .7rem!important;
+  color: #000;
+  text-align: left!important;
   font-weight: 400!important;
 }
 
-.contents-spread {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
 
 .introduction {
   max-width: 700px;
   margin: 5rem auto;
+  padding: 0 1rem;
 }
 
-.introduction h2 {
+.introduction h3 {
+  font-size: 1.6rem;
   text-align: center;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.2rem;
 }
 
 .introduction p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  text-align: center;
   line-height: 1.5;
 }
-.list::before {
-  padding: 0 1rem 0 0;
-  font-family: "Font Awesome 5 Free", sans-serif;
+.features {
+  background: #f1f1f1;
+  padding: 5rem 1rem;
+}
+.features-width {
+  max-width: 790px;
+  margin: auto;
+}
+.features h3{
+  font-size: 1.6rem;
+}
+.features p {
+  font-size: 1.1rem;
+}
+.features svg {
+margin-bottom: 1.3rem;
+  font-size: 2.5rem;
+}
+
+
+.process {
+  margin: 5rem 1rem;
+}
+.process-width {
+  max-width: 600px;
+  margin: auto;
+}
+.process h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+.process p::before {
+  padding: 0 .5rem 0 0;
+  font-family: "Font Awesome 5 Free", s_ans-serif;
   font-weight: 900;
-  font-size: .9rem;
+  font-size: .7rem;
   content: "\f054";
 }
-
-.features {
-  margin: 5rem 0;
-}
-.features img {
-  width: 40%;
-}
-
-.features h3 {
-  font-size: 1.1rem;
-  text-transform: uppercase;
-}
-
-.features p {
-  font-size: 1rem;
+.process p {
+  font-size: 1.2rem;
 }
 .get-lead {
-  max-width: 700px;
-  margin: 5rem auto;
-  padding: 5rem 3rem;
-  background-color:#678797cc;
-}
-
-.get-lead h2 {
-  font-size: 1.5rem;
+  background-color: #2e8c9866;
+  padding: 3rem 1rem;
   text-align: center;
-  margin-bottom: 1rem;
+  
 }
-.all-spreads {
-  margin: 5rem 0;
-}
-.all-spreads h1 {
-  text-transform: uppercase;
-  font-size: 2rem;
-}
-.all-spreads p {
-  font-size: 1.1rem;
+.tarot-reading-intro {
+  background: #2e8c9866;
+  padding: 3rem 1rem;
 }
 
-.spreads-list {
-  max-width: 900px; margin: 5rem auto;
+.tarot-reading-intro h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
 }
-.spread-container {
-  position: relative;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.17)!important;
-  height: 100%;
-  width: 77%;
-  z-index: 1;
-  margin: 0 auto;
+.tarot-reading-intro p {
+  font-size: 1.2rem;
 }
-.spread-enlace {
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-.spread-thumbnail {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.full {
-  margin-left: 0px!important;
-  margin-right: 0px!important;
-  padding: 0 15px;
-}
-
-.link-more {
-    font-size: .9rem;
-    letter-spacing: .05rem;
-    color: #3c5a5f;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 10px 0;
-    border-radius: 1px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.link-more:after {
-display: inline-block;
-font-family: "Font Awesome 5 Free", sans-serif;
-content: '\f054';
-margin-left: .7rem;
-transition: margin-left .11s;
-}
-
-.link-more:hover {
-  color: #5E3E30;
-  text-decoration: none;
-
-}
-.pagination-spreads {
-  margin: 5rem 0;
-}
-.page-item.active .page-link {
-  background-color: #424e50;
-}
-.page-item.disabled .page-link {
-  color: #6c757dad;
-}
-.page-link {
-  color: #414c4d;
-  border:none!important;
-}
-.page-link:hover {
-  color: #414c4d;
-}
-@media (min-width: 768px) { 
-  .navbar-brand {padding-left: 60px;}
-  .navbar-nav {padding-right: 60px;}
-}
-
-@media (max-width: 767px) { 
-.hero { padding: 5rem 1rem; }
-.home-spread img { padding-bottom: 1.3rem; }
-.hero-btn { margin-bottom: 1.3rem; }
-.home-spread-body img { width: 70%; }
-.spread-caption img { max-width: 50%; padding-bottom: 1.7rem;}
-.get-lead {padding: 5rem 1rem; margin: 0; }
-.spread-container { width: 50%;}
-.snippet { padding: 1.7rem 0rem 0; }
+@media (max-width: 770px) {
+.spread-caption h2 {text-align:;}
+.spread-caption p {text-align: ;}
+.spread-caption img { max-width: 70%; margin-bottom: 3rem;}
+    .snippet { padding: 1.7rem 0rem 0; }
+.item {padding:1.5rem 1rem;}
 .features img { width: 25%; }
 }
 
 @media (max-width: 576px) { 
-.hero {padding: 3.7rem 0;}
 .home-spread-body img { width: 90%; }
-.spread-caption img { max-width: 70%;}
+.spread-caption img { max-width: 90%;}
 .spread-container { width: 70%;}
 }
 
