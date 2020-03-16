@@ -273,8 +273,9 @@ margin-bottom: 1.3rem;
   
 }
 .get-lead-width {
-  max-width:500px;
+  max-width: 500px;
   margin: 0 auto;
+  padding-top: 1rem;
 }
 
 .tarot-reading-intro {
