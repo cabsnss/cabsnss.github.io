@@ -221,7 +221,7 @@ font-weight: 600;
 }
 
 .introduction p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: center;
   line-height: 1.5;
 }
@@ -264,7 +264,7 @@ margin-bottom: 1.3rem;
   content: "\f054";
 }
 .process p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .get-lead {
   background-color: #2e8c9866;
@@ -272,6 +272,11 @@ margin-bottom: 1.3rem;
   text-align: center;
   
 }
+.get-lead-width {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .tarot-reading-intro {
   background: #2e8c9866;
   padding: 3rem 1rem;
@@ -288,7 +293,7 @@ margin-bottom: 1.3rem;
 .spread-caption h2 {text-align:;}
 .spread-caption p {text-align: ;}
 .spread-caption img { max-width: 70%; margin-bottom: 3rem;}
-    .snippet { padding: 1.7rem 0rem 0; }
+.snippet { padding: 1.7rem 0rem 0; }
 .item {padding:1.5rem 1rem;}
 .features img { width: 25%; }
 }
