@@ -53,7 +53,7 @@ button:focus {
   letter-spacing: .07rem;
 }
 
-.navbar-nav a:hover {
+.navbar-nav a:htover {
   color: #305d73cf;
 }
 
@@ -161,8 +161,12 @@ button:focus {
     border: 2px solid #222;
     background: #222;
 }
-.spread {
+.spread-release {
   background: #24cbe8;
+  padding: 5rem 1rem;
+}
+.spread-feel-good {
+  background: #d3e0e2;
   padding: 5rem 1rem;
 }
 .spread-caption h1 {
